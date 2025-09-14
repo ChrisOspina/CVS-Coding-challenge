@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Alice Smith",
+    "Plan Type": "Basic",
+    "Prescription": "Ibuprofen"
+  },
+  {
+    "Name": "Bob Johnson",
+    "Plan Type": "Premium",
+    "Prescription": "Metformin"
+  },
+  {
+    "Name": "Charlie Davis",
+    "Plan Type": "Basic",
+    "Prescription": "Lisinopril"
+  }
+]

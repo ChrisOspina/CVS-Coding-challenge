@@ -2,12 +2,15 @@ package Buisness;
 
 import com.google.gson.*;
 import java.io.FileReader;
-import java.io.PrintStream;
+import com.google.gson.annotations.SerializedName;
 
 public class Member {
 	
+	@SerializedName("Name")
 	private String name;
+	@SerializedName("Plan Type")
 	private planType plan;
+	@SerializedName("Prescription")
 	private String prescription;
 	
 	//Default constructor
@@ -46,13 +49,7 @@ public class Member {
 		this.setPrescription(m.getPrescription());
 	}
 	
-	public void writeJson(PrintStream ps) {
-		GsonBuilder builder = new GsonBuilder();
-		builder.setPrettyPrinting();
-		Gson gson = builder.create();
-		String jsonString = gson.toJson(this);
-		ps.println(jsonString);
-	}
+	//Maybe include the ToString
 	
 	
 }

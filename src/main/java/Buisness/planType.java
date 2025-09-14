@@ -2,5 +2,5 @@ package Buisness;
 
 public enum planType {
 	Basic,
-	Prenium,
+	Premium,
 }
