@@ -37,19 +37,4 @@ public class Member {
 		this.name = name;
 	}
 	
-	public void readJson(FileReader fr) {
-		GsonBuilder builder = new GsonBuilder();
-		builder.setPrettyPrinting();
-		Gson gson = builder.create();
-		
-		Member m = gson.fromJson(fr, Member.class);
-		
-		this.setName(m.getName());
-		this.setPlan(m.getPlan());
-		this.setPrescription(m.getPrescription());
-	}
-	
-	//Maybe include the ToString
-	
-	
 }
