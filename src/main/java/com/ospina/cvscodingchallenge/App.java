@@ -8,8 +8,19 @@ import java.util.List;
 
 import com.google.gson.Gson;
 
+/***
+ * The main App class where the main method is stored and called as well as
+ * the checkCoverage method
+ * 
+ * @author Christopher Ospina
+ * @version 1.0
+ */
 public class App 
 {
+	/***
+	 * The main method that performs the functionality via a Json file and system output
+	 * @param args
+	 */
     public static void main( String[] args )
     {
     	String filename = "test.json"; //The path to the Json
@@ -43,18 +54,15 @@ public class App
     				System.out.println("Sorry, "+ m.getName() + ", your prescription (" + m.getPrescription() + ") is NOT covered under the " + m.getPlan() + " plan.\n");
     			}
     		}
-    		
     	}
     	catch(IOException e) {
     		System.err.println("An error occurred");
     		e.printStackTrace();
     	}
-    	
-       // System.out.println( "Hello World!" );
     }
     
     /***
-     * 
+     * This method checks whether a member is covered
      * @param plan: The type of plan a member uses
      * @param prescription: The user's prescription by drug name
      * @return whether the prescription is eligible as a boolean value

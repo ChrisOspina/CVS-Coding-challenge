@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.ospina.cvscodingchallenge","c":"App","l":"App()","u":"%3Cinit%3E()"},{"p":"com.ospina.cvscodingchallenge","c":"App","l":"checkCoverage(planType, String)","u":"checkCoverage(Buisness.planType,java.lang.String)"},{"p":"com.ospina.cvscodingchallenge","c":"App","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
